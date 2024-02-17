@@ -1,0 +1,40 @@
+import { Currency } from "../currency/currency.interface";
+import { Gender } from "../gender/gender.interface";
+import { PersonalAssistant } from "../personal-assistant/personal-assistant.interface";
+
+export interface User {
+  createdAt: Date;
+  updatedAt: Date;
+  isEmailVerified: boolean;
+  isPhoneVerified: boolean;
+  hasAcceptedTerms: boolean;
+  id: number;
+  createdBy: number;
+  updatedBy: number;
+  username: string;
+  nickname: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phoneNumber: string;
+  gender: Gender;
+  birthday: Date;
+  country: string;
+  avatarUrl: string;
+  referralCode: string;
+  referralBy: number;
+  facebookId: string;
+  googleId: string;
+  instagramId: string;
+  twitterId: string;
+  appleId: string;
+  snapchatId: string;
+  tiktokId: string;
+  assetTypes: string[];
+  personalAssistant: PersonalAssistant;
+  cryptocurrencyAssets: string[];
+  descriptions: string[];
+  currentPortfolioId: number;
+  countryCode: string;
+  currency: Currency;
+}

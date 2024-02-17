@@ -1,0 +1,131 @@
+.formSignUp {
+  width: 100%;
+  max-width: 330px;
+  padding: 20px 0;
+}
+
+.questionConnectWallet {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff;
+  padding-bottom: 25px;
+}
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+  color: #00ffa3;
+  padding-bottom: 15px;
+}
+.btnConnect {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 34px;
+  text-align: center;
+  color: #fff;
+  background: #0047ff;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  padding: 13px;
+  height: auto;
+  margin: 20px 0;
+}
+.btnConnect:disabled {
+  background: #9d9d9d;
+  color: #fff;
+  cursor: not-allowed;
+}
+.or {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #016197;
+  line-height: 0.1em;
+  margin: 27px 0;
+  span {
+    background-color: #142a4d;
+    border-radius: 50%;
+    padding: 10px;
+    color: #016197;
+  }
+}
+.btnLoginSocial {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.codeLabel {
+  color: #016197;
+  font-size: 18px !important;
+  padding-bottom: 10px;
+}
+.btnGroups {
+  // display: grid;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  // grid-template-columns: repeat(5, 1fr);
+  margin: 0 auto;
+  .btnLoginSocial {
+    background-color: #292929;
+    width: 52px;
+    height: 52px;
+    &:hover {
+      background-color: #0f3460;
+    }
+  }
+  .btnLoginSocialApple {
+    path {
+      fill: white;
+    }
+  }
+}
+
+.loginText {
+  color: white;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  padding-top: 30px;
+  span {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 500;
+  }
+}
+.forgotPassword {
+  color: white;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  padding-top: 5px;
+  span {
+    // text-decoration: underline;
+    cursor: pointer;
+    // font-weight: 500;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.hideErrorMessage {
+  :global {
+    .ant-form-item-explain {
+      display: none;
+    }
+  }
+}

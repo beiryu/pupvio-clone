@@ -1,0 +1,89 @@
+.inputPhoneNumber {
+  display: grid;
+  grid-template-columns: 120px auto;
+  column-gap: 11px;
+  :global {
+    .ant-select-selection-search-input {
+      text-align: center;
+    }
+    .ant-select-show-arrow.ant-select-show-search .ant-select-selector {
+      height: auto;
+      color: #fff;
+      padding: 12px 18px;
+      background-color: #292929;
+      border: none;
+      width: 118px;
+      font-size: 17px;
+      line-height: normal;
+      border-radius: 10px;
+    }
+    .ant-select-selector .ant-select-selection-search {
+      top: 0;
+      height: 100% !important;
+      input {
+        height: 100% !important;
+      }
+    }
+    .ant-select-selection-item {
+      text-align: center;
+    }
+    .ant-select-single.ant-select-open .ant-select-selection-item {
+      color: #fff;
+      text-align: center;
+    }
+    .ant-select-selection-item .ant-select-selection-item-country {
+      display: none !important;
+    }
+  }
+}
+
+.selectCountry {
+  height: 52px;
+}
+
+.input {
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  background: #292929;
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  min-width: 0;
+  line-height: normal;
+  &::placeholder {
+    color: #fff;
+  }
+  outline: none;
+}
+
+.customPopup {
+  width: 120px !important;
+  background: black;
+  border: 1px solid #fff !important;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 10px !important;
+  padding: 0 !important;
+  div:global(.ant-select-item-option-content) {
+    padding: 11px 15px !important;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+  }
+  div:global(
+      .ant-select-item-option-selected:not(.ant-select-item-option-disabled)
+    ) {
+    background-color: #cecece !important;
+  }
+  div:global(.ant-select-item.ant-select-item-option:not(:last-of-type)) {
+    border-bottom: 1px solid #fff !important;
+  }
+  div:global(.ant-select-item.ant-select-item-option) {
+    padding: 0 !important;
+  }
+  span:global(.ant-select-item-option-state) {
+    padding-right: 10px;
+    line-height: 39px;
+  }
+}

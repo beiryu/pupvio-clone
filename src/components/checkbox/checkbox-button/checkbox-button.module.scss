@@ -1,0 +1,23 @@
+.checkboxButton.customCheckboxButton {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 17px;
+  border-radius: 5px;
+  background: #0f3460;
+  transition: all 0.3s ease-in-out;
+}
+.checkboxButton.customCheckboxButton:global {
+  &.ant-checkbox-wrapper .ant-checkbox {
+    display: none;
+  }
+  &.ant-checkbox-wrapper .ant-checkbox + span {
+    padding: 0;
+  }
+  &.ant-checkbox-wrapper-checked {
+    background-color: #00ffa3;
+    color: #292929;
+  }
+}

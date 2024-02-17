@@ -1,0 +1,40 @@
+@import './font.scss';
+@import 'variables';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  // font-family: $body-font-family;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body.lock-scroll {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+#__next {
+  height: 100%;
+  position: relative;
+  & > div {
+    height: inherit;
+  }
+}
+nextjs-portal {
+  display: none;
+}

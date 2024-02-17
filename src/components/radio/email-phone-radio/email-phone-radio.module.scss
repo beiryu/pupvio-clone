@@ -1,0 +1,28 @@
+.optionBasicLogin {
+  display: flex;
+  width: 100%;
+  border-radius: 8px;
+  background-color: transparent;
+  padding-bottom: 32px;
+}
+
+.optionBasicLoginItem:global(.ant-radio-button-wrapper-checked) {
+  text-underline-offset: 8px;
+  text-decoration: underline;
+  text-decoration-color: #0047ff;
+}
+
+.optionBasicLoginItem:global(.ant-radio-button-wrapper) {
+  &::before {
+    display: none;
+  }
+  font-size: 16px;
+  line-height: 20px;
+  padding: 5px 7px;
+  height: fit-content !important;
+  color: white;
+  background: transparent;
+  border: none;
+  border-inline-start: none;
+  border-inline-end: none;
+}

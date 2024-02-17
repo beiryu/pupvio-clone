@@ -1,0 +1,52 @@
+.btnTranslate {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 9px;
+  position: relative;
+  img {
+    display: none;
+  }
+  :global {
+    .goog-te-gadget-simple {
+      white-space: nowrap;
+      background-color: transparent;
+      border: none;
+      padding-right: 20px;
+    }
+  }
+  a[aria-haspopup='true'] {
+    display: block !important;
+    color: #fff;
+    font-size: 14px;
+    span:not(:first-of-type) {
+      display: none;
+    }
+  }
+
+  .langCodeIcon {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    color: #fff;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    path {
+      fill: #fff;
+    }
+  }
+  &:hover {
+    transition: all 0.3s ease;
+    a {
+      color: #fff;
+    }
+    path {
+      fill: #fff;
+    }
+  }
+  @media (max-width: 768px) {
+    /* Tailwind's 'md' breakpoint */
+    margin: 40px auto;
+  }
+}

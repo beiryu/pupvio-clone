@@ -1,0 +1,26 @@
+.sider {
+  :global {
+    .ant-layout-sider-children {
+      background-color: #000;
+    }
+    .ant-menu {
+      background-color: #000;
+      gap: 10px;
+      .ant-menu-item {
+        padding: 30px 0;
+        margin: 10px auto;
+       
+        .ant-avatar {
+          padding-left: 10px;
+        }
+      }
+      .ant-menu-item-selected {
+        background-color: #0047ff;
+      }
+    }
+    .ant-devider {
+      background: #222222;
+      color: #222222;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.formItem.customFormItem {
+  margin-bottom: 22px !important;
+  :global {
+    .ant-form-item-label {
+      padding-bottom: 10px !important;
+      label {
+        color: #016197;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+      }
+    }
+    label:before {
+      display: none !important;
+    }
+    .ant-form-item-explain-error {
+      color: #ee5e52;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

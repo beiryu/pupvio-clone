@@ -1,0 +1,25 @@
+.btnConnect {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 34px;
+  text-align: center;
+  color: #fff;
+  background: #0047ff;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  padding: 13px;
+  height: auto;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  svg {
+    height: 34px;
+  }
+}
+
+.btnConnect:disabled {
+  background: #9d9d9d;
+  color: #fff;
+  cursor: not-allowed;
+}

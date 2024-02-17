@@ -1,0 +1,44 @@
+// .input.customInput:global(.ant-input-affix-wrapper) {
+//   padding: 12.5px 17px !important;
+// }
+
+// .input.customInput:global(.ant-input[disabled]) {
+//   background: rgba(0, 0, 0, 0.04) !important;
+// }
+
+.input.customInput {
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  background: #292929;
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: normal;
+  &::placeholder {
+    color: #fff;
+  }
+  :global {
+    input {
+      background: #292929;
+      color: #fff;
+      &::placeholder {
+        color: #fff;
+      }
+    }
+    .ant-input-prefix + input {
+      height: 17px;
+      padding-left: 10px;
+      background: #292929;
+      color: #fff;
+      &::placeholder {
+        color: fff;
+      }
+    }
+    input:-internal-autofill-selected {
+      background: #292929 !important;
+      background-color: #292929 !important;
+    }
+  }
+}
+
